@@ -1,0 +1,37 @@
+<h2>Interpolation</h2>
+ <p>This is {{name}} Component</p>
+<p>{{name.length}}</p>
+<p>{{name.toUpperCase()}}</p>
+<p>{{name.toLowerCase()}}</p>
+
+<h2>Property Binding</h2>
+
+<!--Using property Binding-->
+<input [id]="courseId" type="text" value="Angular">
+<br>
+<br>
+
+<!--Interpolation-->
+<input id="{{courseId}}" type="text" value="Angular">
+<br>
+<br>
+
+
+<!--Here We used Property Binding-->
+<input type="text" [disabled]="isDisabled">
+<br>
+<br>
+
+
+<!--Here we used interpolation so that the disabled is directly working-->
+<input type="text"  [disabled]="false"   id={{courseId}}> 
+<br>
+<br>
+
+
+
+<!--It is another Method of bind-disabled-->
+<input type="text" bind-disabled="isDisabled">
+
+
+

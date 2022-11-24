@@ -1,0 +1,59 @@
+  
+  
+<div class="main col-sm-4 offset-4 pt-5 p-3">
+  <form class="form" #myForm="ngForm">
+
+      <div class="form-group mb-3">
+        <label class="form-label">User Name</label>
+        <input type="text" class="form-control" [(ngModel)]="UserModel.name" name="username">
+      </div>
+
+    <div class="form-group mb-3">
+      <label class="form-label">Email address</label>
+      <input type="email" class="form-control" [(ngModel)]="UserModel.email" name="email">
+    </div>
+
+    <div class="form-group mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" [(ngModel)]="UserModel.password" name="password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <!-- <div class="myFormdata">
+    {{myForm.value | json}}
+  </div> -->
+
+  <br>
+
+  </div>
+
+ 
+  <!-- <div class="myFormdata">
+    {{UserModel | json}}
+  </div> -->
+  <!-- <div class="myFormdata">
+    {{name.className}}
+  </div> -->
+
+
+
+
+  <!-- <div class="myFormdata">
+    {{myForm.value | json}}
+  </div> -->
+
+  <!-- <div class="myFormdata">
+    {{UserModel | json}}
+  </div> -->
+
+  <!-- (click)="onSubmit(myForm.value)" -->
+
+  <!-- name="username" [(ngModel)]="UserModel.name" required -->
+
+  <!-- [(ngModel)]="UserModel.email" -->
+  <!-- [(ngModel)]="UserModel.password" -->
+
+  <!-- <div class="myFormdata">
+    {{name.className}}
+  </div> -->

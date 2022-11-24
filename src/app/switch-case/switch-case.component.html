@@ -1,0 +1,20 @@
+
+<h1> ngSwitch Directive </h1>
+
+<div [ngSwitch]="myChoice">
+  <div class= "switchCase">
+    <div *ngSwitchCase="'one'">
+      <h2>This is One</h2>
+    </div> 
+    <div *ngSwitchCase="'two'">
+      <h2>This is Second</h2>
+    </div>
+    <div *ngSwitchCase="'three'">
+      <h2>This is Third</h2>
+    </div>
+    <div *ngSwitchDefault>
+      <h2>Not Found</h2>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,58 @@
+
+
+
+<form class="form col-sm-4 offset-4" [formGroup]="loginForm">
+
+    <div class="form-group mb-3">
+      <label class="form-check-label">UserName:</label>
+      <input type="text" class="form-control" formControlName="username" 
+      [ngClass]="{'is-invalid':loginForm.controls['username'].errors && loginForm.controls['username'].touched}">
+      <div *ngIf="submitted && loginForm.controls['username'].errors" class="text-danger">
+         Username is Required
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label class="form-check-label" >Email:</label>
+      <input type="email" class="form-control" formControlName="emailId"
+      [ngClass]="{'is-invalid': loginForm.controls['emailId'].errors && loginForm.controls['emailId'].touched}">
+      <div *ngIf="submitted && loginForm.controls['emailId'].errors" class="text-danger">
+        Email is Required
+      </div>  
+   </div>
+
+   <div class="form-group mb-3">
+    <label class="form-check-label" >Password</label>
+    <input type="password" class="form-control" formControlName="password"
+    [ngClass]="{'is-invalid': loginForm.controls['password'].errors && loginForm.controls['password'].touched}">
+    <div *ngIf="submitted && loginForm.controls['password'].errors" class="text-danger">
+      Password is Required
+   </div>
+ </div>
+
+    <div class="form-group mb-3">
+        <label class="form-check-label" >Mobile No:</label>
+        <input type="text" class="form-control" formControlName="mobileNo"
+        [ngClass]="{'is-invalid': loginForm.controls['mobileNo'].errors && loginForm.controls['mobileNo'].touched}">
+        <div *ngIf="submitted && loginForm.controls['mobileNo'].errors" class="text-danger">
+          Mobile Number is Required
+       </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <span *ngIf="loginForm.get('emailId').invalid && loginForm.get('emailId').touched" class="text-danger">
+    Email is Required
+  </span>  -->
